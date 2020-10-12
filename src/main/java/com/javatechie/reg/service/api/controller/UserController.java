@@ -20,7 +20,7 @@ public class UserController {
 
     @PostMapping("/register")
     public String register(@RequestBody User user) {
-        User existingUser = repository.findByEmail(user.getEmail());
+        User existingUser = repository.findUserByEmail(user.getEmail());
         if(existingUser==null){
         repository.save(user);
         return "Hi " + user.getName() + " your Registration process successfully completed";
@@ -35,14 +35,14 @@ public class UserController {
 
     @GetMapping("/findUser/{email}")
     public User findUser(@PathVariable String email) {
-        return repository.findByEmail(email);
+        return repository.findUserByEmail(email);
     }
 
     @DeleteMapping("/deleteUser/{email}")
     public String deleteUser(@PathVariable String email) {
-        User existingUser = repository.findByEmail(email);
+        User existingUser = repository.findUserByEmail(email);
         if(existingUser!=null){
-            repository.deleteByEmail(email);
+            repository.deleteUserByEmail(email);
             return "User with email: " + email + " deleted successfully";
         }
         else return "No users with email: " + email + " found";
