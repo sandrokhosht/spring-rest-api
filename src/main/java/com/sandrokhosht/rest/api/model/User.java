@@ -1,4 +1,4 @@
-package com.javatechie.reg.service.api.model;
+package com.sandrokhosht.rest.api.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,12 +1,9 @@
-package com.javatechie.reg.service.api.controller;
+package com.sandrokhosht.rest.api.controller;
 
-import javassist.NotFoundException;
-import org.omg.CosNaming.NamingContextPackage.NotFound;
+import com.sandrokhosht.rest.api.dao.UserRepository;
+import com.sandrokhosht.rest.api.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import com.javatechie.reg.service.api.dao.UserRepository;
-import com.javatechie.reg.service.api.model.User;
 
 import java.util.List;
 

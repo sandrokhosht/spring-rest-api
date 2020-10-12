@@ -1,7 +1,6 @@
-package com.javatechie.reg.service.api;
+package com.sandrokhosht.rest.api;
 
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 

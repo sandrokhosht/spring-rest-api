@@ -1,12 +1,11 @@
-package com.javatechie.reg.service.api.dao;
+package com.sandrokhosht.rest.api.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.javatechie.reg.service.api.model.User;
+import com.sandrokhosht.rest.api.model.User;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
-import java.util.List;
 
 @Transactional
 @Repository
