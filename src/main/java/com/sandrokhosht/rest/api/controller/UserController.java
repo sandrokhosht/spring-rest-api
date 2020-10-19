@@ -42,7 +42,7 @@ public class UserController {
             repository.deleteUserByEmail(email);
             return "User with email: " + email + " deleted successfully";
         }
-        else return "No users with email: " + email + " found";
+        else return "No users with email: " + email + " found"; //
     }
 }
 
